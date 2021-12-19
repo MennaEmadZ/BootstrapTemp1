@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Bootstrap</title>
+</head>
+<body>
+     <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light"  >
+        <div class="container-xxl">
+            <a href="#" class="navbar-brand">
+                <img src="../Resources/pro.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end text-center" id="main-nav">
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item ">
+                        <a class="nav-link"href="#intro">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Layouts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Blog</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#">ContactUs</a>
+                    </li>
+                </ul>
+            </div>
+         </div>  
+    </nav>
+    <!-- slider -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+       
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="../Resources/2.jpg" alt="Los Angeles">
+          </div>
+      
+          <div class="item">
+            <img  src="../Resources/1.jpg" alt="Chicago">
+          </div>
+      
+          <div class="item">
+            <img src="../Resources/3.jpg"  alt="New York">
+          </div>
+        </div>
+      
+      
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- intro -->
+      <section id="intro">
+          <div class="container">
+              <div class="row text-center secsec">
+                <div id="seccard1" class="col-lg-4 col-md-6 col-sm-12 text-center  seccard">
+                    <div class="dot roundback">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                            <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                        </svg>
+                    </div>
+                    <p>mobile</p>
+                    <h2>Secure & Reliable</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus assumenda autem earum itaque animi?  recusandae blanditiis, officiis quae perspiciatis repellat, soluta nam culpa cupiditate ipsam dolorum architecto!
+                    </p>
+                </div>
+                
+                <div id="seccard2"  class="col-lg-4 col-md-6 col-sm-12 text-center  seccard">
+                    <div class="dot roundback">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-lightning" viewBox="0 0 16 16">
+                            <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/>
+                        </svg>
+                    </div>
+                   
+                    <p>mobile</p>
+                    <h2>Secure & Reliable</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus assumenda autem earum itaque animi?  recusandae blanditiis, officiis quae perspiciatis repellat, soluta nam culpa cupiditate ipsam dolorum architecto!
+                    </p>
+                </div>
+                
+                <div id="seccard3"  class="col-lg-4 col-md-6 col-sm-12 text-center  seccard">
+                    <div class="dot roundback">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                            <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+                        </svg>
+                    </div>
+                    
+                    <p>mobile</p>
+                    <h2>Customer Support</h2>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus assumenda autem earum itaque animi?  recusandae blanditiis, officiis quae perspiciatis repellat, soluta nam culpa cupiditate ipsam dolorum architecto!
+                    </p>
+                </div>
+              </div>
+          </div>
+      </section>
+      <!-- cards -->
+      <section id="cardssec" class=" bg-light mt5  align-items-center justify-content-center  ">
+        <div class="container align-items-center justify-content-center text-center">
+            <div class="container-lg">
+                <div class="text-center">
+                    <h2 class="diff">Hosto <span class="blue ">Plans</span> & <span class="blue">Pricing</span></h2>
+                    <p class="lead text-muted">Our Hosting plans in details. choose the right plan for you!</p>
+                </div>
+            </div>
+            <div class="row my-5 align-items-center justify-content-center text-center ">
+              <div class="col-lg-3 col-md-6 col-sm-12 text-center ">
+                  
+                <div class="card border-0 bg-light" style="width: 25rem; ">
+                    <div class="card-body text-center ">
+                        <h5 class="card-header py-4 text-white" style="background-color: #07aca0;">
+                            Web Gosting
+                        </h5>
+                        <div class="price py-3 border">
+                            <h2 class="card-title"  style="color: #3e5161; padding-bottom:20px;  ">$<span class="display-1 fw-bold" style="margin-top: -40px;">4</span>.45</h2>
+                            <h6 class="card-subtitle  text-muted " style="color: #3e5161; margin-top: -30px; margin-right: -120px;  ">/month</h6>
+                        </div>
+                       <div class="prop py-4 px-5 text-start border">
+                            <p> <span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">10GB</span> Storage Space</p>
+                            <p> <span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">15GB</span> Bandwidth</p>
+                            <p><span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">Ultimated</span> FTP & Email</p>
+                            <p><span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">Free</span> Domain</p>
+                       </div>
+                       <div class="d-grid gap-2  ">
+                        <button class="btn btn-primary border-0 py-4 fw-bold" style=" background: linear-gradient(to bottom, #23c8bc 0%, #0bb0a4 100%); border-radius: 0;" type="button">Sign Up Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+              
+              <div  class="col-lg-3 col-md-6 col-sm-12 text-center ">
+                          
+                <div class="card border-0 bg-light" style="width: 25rem;">
+                    <div class="card-body text-center">
+                        
+                        <h5 class="card-header py-4  text-white"  style="background-color: #17bcb0;">
+                            Reseller Hosting
+                        </h5>    
+                       <div class="price py-3 border">
+                        <h2 class="card-title"  style="color: #3e5161; padding-bottom:20px;  ">$<span class="display-1 fw-bold" style="margin-top: -40px;">9</span>.45</h2>
+                        <h6 class="card-subtitle  text-muted " style="color: #3e5161; margin-top: -30px; margin-right: -120px;  ">/month</h6>
+                       </div>
+                        
+                       <div class="prop py-4 px-5 text-start border">
+                        <p> <span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">10GB</span> Storage Space</p>
+                        <p> <span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">15GB</span> Bandwidth</p>
+                        <p><span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">Ultimated</span> FTP & Email</p>
+                        <p><span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">Free</span> Domain</p>
+                       
+                       </div>
+                       <div class="d-grid gap-2  ">
+                        <button class="btn btn-primary border-0 py-4 fw-bold" style=" background: linear-gradient(to bottom, #23c8bc 0%, #0bb0a4 100%); border-radius: 0;" type="button">Sign Up Now</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div  class="col-lg-3 col-md-6 col-sm-12 text-center  ">
+                          
+                <div class="card border-0 bg-light" style="width: 25rem;">
+                    <div class="card-body text-center">
+                        <h5 class="card-header py-4 text-white"  style="background-color: #27ccc0;">
+                            Vps Hosting
+                         </h5>
+                        <div class="price py-3 border">
+                            <h2 class="card-title"  style="color: #3e5161; padding-bottom:20px;  ">$<span class="display-1 fw-bold" style="margin-top: -40px;">12</span>.45</h2>
+                            <h6 class="card-subtitle  text-muted " style="color: #3e5161; margin-top: -30px; margin-right: -120px;  ">/month</h6>
+                        </div>
+                        
+                        <div class="prop py-4 px-5 text-start border">
+                            <p> <span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">10GB</span> Storage Space</p>
+                            <p> <span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">15GB</span> Bandwidth</p>
+                            <p><span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">Ultimated</span> FTP & Email</p>
+                            <p><span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">Free</span> Domain</p>
+                           
+                       </div>
+                       <div class="d-grid gap-2  ">
+                        <button class="btn btn-primary border-0 py-4 fw-bold" style=" background: linear-gradient(to bottom, #23c8bc 0%, #0bb0a4 100%); border-radius: 0;" type="button">Sign Up Now</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div  class="col-lg-3 col-md-6 col-sm-12 text-center ">
+                <div class="card border-0 bg-light" style="width: 25rem;">
+                    <div class="card-body text-center">
+                        <h5 class="card-header py-4 text-white"  style="background-color: #3cd1c6;">
+                            Domain Names
+                        </h5>
+                        <div class="price py-3 border">
+                             <h2 class="card-title"  style="color: #3e5161; padding-bottom:20px;  ">$<span class="display-1 fw-bold" style="margin-top: -40px;">14</span>.45</h2>
+                            <h6 class="card-subtitle  text-muted " style="color: #3e5161; margin-top: -30px; margin-right: -120px;  ">/month</h6>
+                        </div>
+                     
+                       <div class="prop py-4 px-5 text-start border">
+                        <p> <span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">10GB</span> Storage Space</p>
+                        <p> <span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">15GB</span> Bandwidth</p>
+                        <p><span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">Ultimated</span> FTP & Email</p>
+                        <p><span class="glyphicon glyphicon-ok text-success"></span> <span class=" fw-bold">Free</span> Domain</p>
+                       
+                   </div>
+                   <div class="d-grid gap-2  ">
+                    <button class="btn btn-primary border-0 py-4 fw-bold" style=" background: linear-gradient(to bottom, #23c8bc 0%, #0bb0a4 100%); border-radius: 0;" type="button">Sign Up Now</button>
+                  </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features cards -->
+    
+    <section id="cardssec " class=" align-items-center justify-content-center mt5">
+        <div class="container align-items-center justify-content-center text-center">
+            <div class="container-lg">
+                <div class="text-center">
+                    <h2 class="diff">Key Features of <span class="blue ">Hosto</span></h2>
+                    <p class="lead text-muted">Our Hosting plans in details. choose the right plan for you!</p>
+                </div>
+            </div>
+            <div class="row my-5 align-items-center justify-content-center text-center ">
+                
+                <!-- card 1 -->
+                
+                <div class="col-lg-4 col-md-6 col-sm-6 my-5 text-center  ">
+                    <div class="card rounded">
+                        <div class="card-header bg-transparent">
+                            <h5 class="text-start fw-bold">Web Hosting</h5>
+                           <div class="pricebadge"> 
+                               <span class="card-notify-year">Starting <span class="pinkc" style="color: #eb5281; ">$1.99</span> /month</span>
+                           </div>
+                        </div>
+                       
+                        <div class="card-body text-start" style="background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);height:200px;">
+                            <div class="ad-title  text-muted" style=" width:200px;line-height: 20px;
+                            word-spacing: 3px;">
+                                <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. sit amet consectetur adipisicing elit. Architecto placeat libero, mollitia est optio eum?</p>
+                            
+                            </div>
+                            <img class="d-sm-none d-md-block" src="../Resources/type.png" style="width:125px; height:120px;float:right; position:absolute; top:125px; right:10px;">
+                            
+                            <button class="btn btn-primary bg-light text-muted border-0  fw-bold" style=" background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);  box-shadow: 0px 2px 0px 0px rgba(46,61,73,0.15);" type="button">Read more</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+              <!-- card 2 -->
+              
+                <div  class="col-lg-4 col-md-6 col-sm-6 my-5 text-center ">
+                    <div class="card rounded">
+                        <div class="card-header bg-transparent">
+                            <h5 class="text-start fw-bold">E-commerce</h5>
+                           <div class="pricebadge"> 
+                               <span class="card-notify-year">Starting <span class="pinkc" style="color: #eb5281; ">$1.99</span> /month</span>
+                           </div>
+                        </div>
+                       
+                        <div class="card-body text-start" style="background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);height:200px;">
+                            <div class="ad-title  text-muted" style=" width:200px;line-height: 20px;
+                            word-spacing: 3px;">
+                                <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. sit amet consectetur adipisicing elit. Architecto placeat libero, mollitia est optio eum?</p>
+                            
+                            </div>
+                            <img class="d-sm-none  d-md-block" src="../Resources/server.png" style="width:125px; height:120px;float:right; position:absolute; top:125px; right:10px;">
+                            
+                            <button class="btn btn-primary bg-light text-muted border-0  fw-bold" style=" background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);  box-shadow: 0px 2px 0px 0px rgba(46,61,73,0.15);" type="button">Read more</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- card 3 -->
+                
+                <div  class="col-lg-4 col-md-6 col-sm-6 my-5 text-center  ">
+                    <div class="card rounded">
+                        <div class="card-header bg-transparent">
+                            <h5 class="text-start fw-bold">Domains</h5>
+                           <div class="pricebadge"> 
+                               <span class="card-notify-year">Starting <span class="pinkc" style="color: #eb5281; ">$1.99</span> /month</span>
+                           </div>
+                        </div>
+                       
+                        <div class="card-body text-start" style="background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);height:200px;">
+                            <div class="ad-title  text-muted" style=" width:200px;line-height: 20px;
+                            word-spacing: 3px;">
+                                <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. sit amet consectetur adipisicing elit. Architecto placeat libero, mollitia est optio eum?</p>
+                            
+                            </div>
+                            <img class="d-sm-none d-md-block" src="../Resources/cart.png" style="width:125px; height:120px;float:right; position:absolute; top:125px; right:10px;">
+                            
+                            <button class="btn btn-primary bg-light text-muted border-0  fw-bold" style=" background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);  box-shadow: 0px 2px 0px 0px rgba(46,61,73,0.15);" type="button">Read more</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div  class="col-lg-4 col-md-6 col-sm-6 my-5 text-center ">
+                    <div class="card rounded">
+                        <div class="card-header bg-transparent">
+                            <h5 class="text-start fw-bold">My Website</h5>
+                           <div class="pricebadge"> 
+                               <span class="card-notify-year">Starting <span class="pinkc" style="color: #eb5281; ">$1.99</span> /month</span>
+                           </div>
+                        </div>
+                       
+                        <div class="card-body text-start" style="background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);height:200px;">
+                            <div class="ad-title  text-muted" style=" width:200px;line-height: 20px;
+                            word-spacing: 3px;">
+                                <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. sit amet consectetur adipisicing elit. Architecto placeat libero, mollitia est optio eum?</p>
+                            
+                            </div>
+                            <img class="d-sm-none d-md-block" src="../Resources/com.png" style="width:125px; height:120px;float:right; position:absolute; top:125px; right:10px;">
+                            
+                            <button class="btn btn-primary bg-light text-muted border-0  fw-bold" style=" background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);  box-shadow: 0px 2px 0px 0px rgba(46,61,73,0.15);" type="button">Read more</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div  class="col-lg-4 col-md-6 col-sm-6 my-5 text-center ">
+                    <div class="card rounded">
+                        <div class="card-header bg-transparent">
+                            <h5 class="text-start fw-bold">Servers</h5>
+                           <div class="pricebadge"> 
+                               <span class="card-notify-year">Starting <span class="pinkc" style="color: #eb5281; ">$1.99</span> /month</span>
+                           </div>
+                        </div>
+                       
+                        <div class="card-body text-start" style="background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);height:200px;">
+                            <div class="ad-title  text-muted" style=" width:200px;line-height: 20px;
+                            word-spacing: 3px;">
+                                <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. sit amet consectetur adipisicing elit. Architecto placeat libero, mollitia est optio eum?</p>
+                            
+                            </div>
+                            <img  class="d-sm-none d-md-block" src="../Resources/userf.png" style="width:125px; height:120px;float:right; position:absolute; top:125px; right:10px;">
+                            
+                            <button class="btn btn-primary bg-light text-muted border-0  fw-bold" style=" background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);  box-shadow: 0px 2px 0px 0px rgba(46,61,73,0.15);" type="button">Read more</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- card 6 -->
+                
+                <div  class="col-lg-4 col-md-6 col-sm-6 my-5 text-center ">
+                    <div class="card rounded">
+                        <div class="card-header bg-transparent">
+                            <h5 class="text-start fw-bold">My Website Personal</h5>
+                           <div class="pricebadge"> 
+                               <span class="card-notify-year">Starting <span class="pinkc" style="color: #eb5281; ">$1.99</span> /month</span>
+                           </div>
+                        </div>
+                       
+                        <div class="card-body text-start" style="background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);height:200px;">
+                            <div class="ad-title  text-muted" style=" width:200px;line-height: 20px;
+                            word-spacing: 3px;">
+                                <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. sit amet consectetur adipisicing elit. Architecto placeat libero, mollitia est optio eum?</p>
+                            
+                            </div>
+                            <img class="d-sm-none d-md-block" src="../Resources/MacComputer.png" style="width:125px; height:120px;float:right; position:absolute; top:125px; right:10px;">
+                            
+                            <button class="btn btn-primary bg-light text-muted border-0  fw-bold" style=" background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);  box-shadow: 0px 2px 0px 0px rgba(46,61,73,0.15);" type="button">Read more</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- desplay non -->
+    
+        <section id="brands ">
+            <div class="container">
+                <div class="row text-center secsec  ">
+                    <div  class="col-lg-2 col-md-2 col-sm-4 text-center  pt-5 border ">
+                        <img src="../Resources/chrome.png" style="width: 150px;filter: grayscale(100%); opacity:0.2" >
+                    </div>
+                    <div  class="col-lg-2 col-md-2 col-sm-4  text-center pt-5 border">
+                        <img  src="../Resources/CPanel.png" style="width: 150px; filter: grayscale(100%);opacity:0.2 " >
+                    </div>
+                    <div  class="col-lg-2 col-md-2 col-sm-4 text-center pt-2 border ">
+                        <img src="../Resources/html.png" style= "width:150px; filter: grayscale(100%); opacity:0.2" >
+                    </div>
+                    <div  class="col-lg-2 col-md-2 col-sm-4 text-center border ">
+                        <img src="../Resources/Java.png" style="width: 150px; filter: grayscale(100%);opacity:0.2" >
+                    </div>
+                    <div  class="col-lg-2 col-md-2 col-sm-4  text-center pb-5 border">
+                        <img src="../Resources/jquery.png" style="width: 150px; filter: grayscale(100%);opacity:0.2" >
+                    </div>
+                    <div  class="col-lg-2 col-md-2 col-sm-4 text-center pb-5 border">
+                        <img src="../Resources/MySQL.png" style="width: 150px; filter: grayscale(100%);opacity:0.2" >
+                    </div>
+                   
+                </div>
+            </div>
+        </section> 
+    <section id="last-section" style="background-color: #2d3032;">
+        <div class="container text-muted">
+            <div class="row  justify-content-center ">
+                <div  class="col-lg-3 col-md-2 col-sm-2 text-start  py-5  ">
+                       <p class="text-start  fw-bold py-3">About Us</p>
+                       <p  class="text-start text-secondary py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, illum.</p>
+                       <div> <i class="bi bi-house-fill py-3" style="color:#07aca0;" ></i><small>  3301 Envato Melbourne, little Lonsdale st</small></div>
+                       <div> <i class="bi bi-telephone-fill py-3" style="color:#07aca0;"></i><small>  +1 234 567 8910</small></div>
+                       <div> <i class="bi bi-envelope-fill py-3" style="color:#07aca0;"></i><small>  info@helloworld.com</small></div>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2  text-start  pt-3  ">
+                    <p class="text-start  fw-bold py-3">Navigation</p>
+                   <li> Web Hosting</li>
+                   <li> Reseller Hosting</li>
+                   <li> Features</li>
+                   <li> VPS Hosting</li>
+                   <li> Dedicated Servers</li>
+                   <li> Domain Registration</li>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 text-start   pt-3   ">
+                    <p class="text-start  fw-bold py-3">Useful Links</p>
+                   <li> Web Hosting</li>
+                   <li> Reseller Hosting</li>
+                   <li> Features</li>
+                   <li> VPS Hosting</li>
+                   <li> Dedicated Servers</li>
+                   <li> Domain Registration</li>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 text-start   pt-3   ">
+                    <p class="text-start  fw-bold py-3">Recent Posts</p>
+                    <li> Home</li>
+                    <li> About</li>
+                    <li> Features</li>
+                    <li> Blog</li>
+                    <li> Works</li>
+                    <li> Contacts</li>
+                </div>
+                <div  class="col-lg-3 col-md-2 col-sm-2 text-start  pt-3   ">
+                    <p class="text-start  fw-bold py-3">Tags</p>
+                   <button type="button" class="btn btn-info my-1 border-0" style="background-color:#07aca0;">Business</button>
+                   <button type="button" class="btn btn-info my-1 border-0" style="background-color:#07aca0;">Corporte</button>
+                   <button type="button" class="btn btn-info my-1 border-0" style="background-color:#07aca0;">Portfolio</button>
+                   <button type="button" class="btn btn-info my-1 border-0" style="background-color:#07aca0;"> Work</button>
+                   <button type="button" class="btn btn-info my-1 border-0" style="background-color:#07aca0;">Clean</button>
+                   <button type="button" class="btn btn-info my-1 border-0" style="background-color:#07aca0;">Template</button>
+                   <button type="button" class="btn btn-info my-1 border-0" style="background-color:#07aca0;">Wordpress</button>
+                   <button type="button" class="btn btn-info my-1 border-0" style="background-color:#07aca0;">Joomla</button>
+                   <button type="button" class="btn btn-info my-1 border-0" style="background-color:#07aca0;">Drupal</button>
+                   <button type="button" class="btn btn-info my-1 border-0" style="background-color:#07aca0;">Grow</button>
+                   
+                </div>
+        
+            </div>
+           
+        </div>
+    </section>
+    
+    <section class=" bg-dark  py-3">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div  class="col-lg-6 col-md-6 col-sm-6 text-start  pt-3   ">
+                    <div class="text-left col text-muted px-5" >
+                    Hosto © 2013 Privacy Policy 
+                    </div>
+                </div>
+                <div  class="col-lg-6 col-md-6 col-sm-6 text-start  pt-3   ">
+                    <div class="text-right col px-5" >
+                         <i class="bi bi-facebook py-3 px-3" style="color:#07aca0;"></i>
+                         <i class="bi bi-twitter py-3  px-3" style="color:#07aca0;"></i>
+                         <i class="bi bi-linkedin py-3  px-3" style="color:#07aca0;"></i>
+                         <i class="bi bi-twitch py-3  px-3" style="color:#07aca0;"></i>
+                         <i class="bi bi-facebook py-3 px-3" style="color:#07aca0;"></i>
+                         <i class="bi bi-twitter py-3 px-3" style="color:#07aca0;"></i>
+                         <i class="bi bi-linkedin py-3 px-3" style="color:#07aca0;"></i>
+                         <i class="bi bi-twitch py-3 px-3" style="color:#07aca0;"></i>
+                         
+                      
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+   </body>
+</html>
