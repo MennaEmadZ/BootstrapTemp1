@@ -1,0 +1,150 @@
+/*navbar */
+@font-face 
+{
+    font-family: regularfont;
+    src: url(../Resources/RobotoCondensed-Regular.ttf);
+}
+@font-face 
+{
+    font-family: lightfont;
+    src: url(../Resources/RobotoCondensed-Light.ttf);
+}
+@font-face 
+{
+    font-family: boldfont;
+    src: url(../Resources/RobotoCondensed-Bold.ttf);
+}
+
+.nav-item a:link, .nav-item a:visited
+{
+    color:#898989;
+}
+.nav-item a:active,.nav-item a:hover
+{
+    text-decoration: none;
+    border-top: 4px solid #27ccc0;
+    color: #27ccc0;
+}
+/* slider */
+#myCarousel
+{
+    height: 600px;
+}
+#myCarousel img
+{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+/* intro */
+.secsec
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.seccard
+{
+    
+    height: 350px;
+    padding: 30px;
+    color:#fff;
+}
+.seccard h2
+{
+    font-family: boldfont;
+    padding-bottom:10px;
+}
+.seccard p
+{
+    font-family: lightfont;
+    line-height: 25px;
+    word-spacing: 3px;
+}
+#seccard1
+{
+    background-color: #07aca0;
+}
+#seccard2
+{
+    background-color: #17bcb0;
+}
+#seccard3
+{
+    background-color: #27ccc0;
+}
+.roundback
+{
+    background-color: #3cd1c6;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    display: inline-block; 
+    text-align:center;
+}
+.roundback svg
+{
+    padding-top:18px;
+}
+/* card */
+.card 
+{
+    margin:0;
+    padding:0;  
+    border:none;
+    
+}
+.card:hover {
+    
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.card-body 
+{
+    
+    padding:0;  
+    margin:0;
+  
+}
+.card-header 
+{
+    background-color: #07aca0;
+}
+.diff
+{
+    color:#3e5161;
+    font-family: boldfont;
+    
+}
+.diff p
+{
+    font-family: lightfont;
+}
+.diff span
+{
+    color:#27ccc0;
+  
+}
+.price
+{
+    background: linear-gradient(to bottom, #fbfbfb 0%, #dddddd 100%);
+}
+/* features card */
+.card-header h2
+{
+    font-family: boldfont;
+}
+.pricebadge
+{
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    background:#fff;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    text-align: center;     
+    font-size: 14px;      
+    width: 80px;
+    height: 80px;    
+    padding: 15px 0 0 0;
+}
